@@ -1,0 +1,12 @@
+<h1>Pokedex</h1>
+<h3>a continuacion se muestran un listado de pokemons</h3>
+
+<ol>
+@for (pokemon of pokemons.results; track pokemons.results) {
+    <li>
+        <a href={{pokemon.url}}><h4>{{pokemon.name}}</h4></a>
+    </li>
+}@empty {
+    <p>No hay datos para mostrar</p>
+}
+</ol>
